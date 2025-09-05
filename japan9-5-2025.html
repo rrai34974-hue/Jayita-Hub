@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Japan News — September 5, 2025</title>
+  <meta name="description" content="A responsive HTML page summarizing key Japan-related news for September 5, 2025, styled and ready to use." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b1020;
+      --card: #111735;
+      --text: #e6e9f4;
+      --muted: #aab1d6;
+      --accent: #6aa6ff;
+      --accent-2: #6cffc3;
+      --chip: #1a2150;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{ box-sizing: border-box; }
+    html,body{ margin:0; padding:0; background:linear-gradient(180deg,#0b1020,#0f1542 60%, #0b1020); color:var(--text); font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial; }
+    a{ color:inherit; text-decoration:none; }
+    .container{ width:min(1100px, 92vw); margin-inline:auto; }
+    header{
+      position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px);
+      background:rgba(11,16,32,.75); border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .nav{ display:flex; align-items:center; justify-content:space-between; padding:16px 0; }
+    .brand{ display:flex; gap:10px; align-items:center; font-weight:800; letter-spacing:.3px; }
+    .brand .dot{ width:10px; height:10px; border-radius:50%; background:linear-gradient(45deg,var(--accent),var(--accent-2)); box-shadow:0 0 20px rgba(106,166,255,.8); }
+    .date{ font-weight:600; color:var(--muted); font-size:14px; }
+
+    .hero{ padding:38px 0 8px; }
+    .hero h1{ font-size: clamp(26px, 4.2vw, 40px); margin:0; line-height:1.2; }
+    .hero p{ margin:10px 0 0; color:var(--muted); font-size:15px; }
+
+    .chips{ display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 26px; }
+    .chip{ padding:6px 10px; border-radius:999px; background:var(--chip); color:#cfe0ff; border:1px solid rgba(255,255,255,.08); font-size:12px; }
+
+    .grid{ display:grid; grid-template-columns: repeat(12, 1fr); gap:18px; }
+    .card{
+      grid-column: span 12;
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:18px; background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      box-shadow:var(--shadow); overflow:hidden; position:relative; isolation:isolate;
+    }
+    @media (min-width: 760px){
+      .card.xl{ grid-column: span 7; }
+      .card.md{ grid-column: span 5; }
+      .card.sm{ grid-column: span 4; }
+    }
+    .card .pad{ padding:16px 16px 18px; }
+    .eyebrow{ color:#9dd0ff; text-transform:uppercase; font-size:12px; letter-spacing:1px; font-weight:700; }
+    .title{ font-size: clamp(18px, 2.3vw, 24px); margin:6px 0 8px; font-weight:700; }
+    .summary{ color:var(--muted); font-size:14.5px; line-height:1.6; }
+    .meta{ display:flex; gap:12px; align-items:center; color:#b6c2ea; font-size:12px; margin-top:12px; }
+    .badge{ padding:4px 8px; background:linear-gradient(45deg, rgba(106,166,255,.2), rgba(108,255,195,.2)); border:1px solid rgba(255,255,255,.08); border-radius:999px; font-weight:700; font-size:11px; }
+    .cta{ display:inline-flex; align-items:center; gap:8px; margin-top:14px; color:#fff; font-weight:700; }
+    .cta .arrow{ width:14px; height:14px; border:2px solid currentColor; border-left:0; border-top:0; transform:rotate(-45deg); }
+    .card a:hover .title{ text-decoration:underline; }
+
+    footer{ margin:34px 0 60px; color:var(--muted); font-size:12px; }
+    .sources{ font-size:12px; color:#97a4d7; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span> Japan News</div>
+      <div class="date">September 5, 2025 (Friday)</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Top Japan-related Headlines — September 5, 2025</h1>
+      <p>Click any headline to read the full story on the source site.</p>
+      <div class="chips">
+        <span class="chip">Politics</span>
+        <span class="chip">Business</span>
+        <span class="chip">Technology</span>
+        <span class="chip">Markets</span>
+        <span class="chip">Weather</span>
+        <span class="chip">Culture</span>
+        <span class="chip">Sports</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <!-- 1. US–Japan Tariff Deal -->
+      <article class="card xl">
+        <div class="pad">
+          <div class="eyebrow">Major · Trade</div>
+          <a href="https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-04-2025/card/trump-lowers-auto-tariffs-on-japan-2bfYmUtdZOWVWfoaQAQz" target="_blank" rel="noopener noreferrer">
+            <h2 class="title">U.S. Lowers Auto Tariffs on Japanese Cars from 25% to 15%</h2>
+          </a>
+          <p class="summary">According to Wall Street Journal live coverage, an executive order signed on Sept 5 reduces tariffs. As part of the deal, Japan agreed to lower tariffs on certain U.S. products and pledged increased investment.</p>
+          <div class="meta"><span class="badge">Sept 5, 2025</span><span>Source: WSJ Live</span></div>
+          <a class="cta" href="https://timesofindia.indiatimes.com/business/international-business/us-japan-deal-donald-trump-signs-executive-order-cutting-tokyo-auto-tariffs-to-15-check-details/articleshow/123710430.cms" target="_blank" rel="noopener noreferrer">Read more <span class="arrow"></span></a>
+        </div>
+      </article>
+
+      <!-- 2. Japan explores Alaskan LNG -->
+      <article class="card md">
+        <div class="pad">
+          <div class="eyebrow">Energy</div>
+          <a href="https://www.reuters.com/business/energy/japan-explores-alaskan-lng-purchases-part-7-bln-energy-deal-us-japan-statement-2025-09-05/" target="_blank" rel="noopener noreferrer">
+            <h2 class="title">Japan Considers Buying LNG from Alaska as Part of $7B Energy Deal</h2>
+          </a>
+          <p class="summary">A US-Japan joint statement indicates Tokyo is evaluating purchases of Alaskan LNG under an energy agreement valued at roughly $7 billion.</p>
+          <div class="meta"><span class="badge">Reuters</span></div>
+        </div>
+      </article>
+
+      <!-- 3. Freedom Edge drills -->
+      <article class="card sm">
+        <div class="pad">
+          <div class="eyebrow">Security</div>
+          <a href="https://www.reuters.com/world/china/south-korea-japan-us-hold-defence-drills-heels-china-parade-joined-by-north-2025-09-05/" target="_blank" rel="noopener noreferrer">
+            <h2 class="title">South Korea–Japan–US ‘Freedom Edge’ Joint Exercises Announced for Sept 15</h2>
+          </a>
+          <p class="summary">The annual combined drills will focus on air, naval, and cyber capabilities to deter threats from the Korean Peninsula.</p>
+          <div class="meta"><span class="badge">Reuters</span></div>
+        </div>
+      </article>
+
+      <!-- 4. Tokyo Hydrogen Taxis -->
+      <article class="card sm">
+        <div class="pad">
+          <div class="eyebrow">Green Tech</div>
+          <a href="https://asianews.network/tokyo-reveals-plan-for-600-hydrogen-taxis-with-several-ready-to-pick-up-passengers/" target="_blank" rel="noopener noreferrer">
+            <h2 class="title">Tokyo Plans 600 Hydrogen Taxis to Accelerate Zero-Emission Transport</h2>
+          </a>
+          <p class="summary">Toyota Crown models will offer ~820 km range with 3-minute hydrogen refueling — part of Tokyo’s clean mobility push.</p>
+          <div class="meta"><span class="badge">Asia News Network</span></div>
+        </div>
+      </article>
+
+      <!-- 5. Markets / Nikkei up -->
+      <article class="card md">
+        <div class="pad">
+          <div class="eyebrow">Economy</div>
+          <a href="https://apnews.com/article/a0403b5a549883edfde1f606db97ff0a" target="_blank" rel="noopener noreferrer">
+            <h2 class="title">Asia Markets Rally After Wall Street Gains; Nikkei Rises</h2>
+          </a>
+          <p class="summary">Tokyo’s Nikkei climbed 0.9% as wage growth and household spending data for July supported investor sentiment.</p>
+          <div class="meta"><span class="badge">AP News</span></div>
+        </div>
+      </article>
+
+      <!-- 6. Typhoon advisory -->
+      <article class="card sm">
+        <div class="pad">
+          <div class="eyebrow">Weather Alert</div>
+          <a href="https://www.nationthailand.com/news/general/40055004" target="_blank" rel="noopener noreferrer">
+            <h2 class="title">Typhoon ‘Peipah’ Prompts Warnings for Tokai, Kanto and Tohoku Regions</h2>
+          </a>
+          <p class="summary">Heavy rainfall is expected Sept 5–6 across parts of central and northeastern Japan. Authorities advise caution and local updates.</p>
+          <div class="meta"><span class="badge">The Nation</span></div>
+        </div>
+      </article>
+
+      <!-- 7. Diplomacy / Expo -->
+      <article class="card sm">
+        <div class="pad">
+          <div class="eyebrow">Diplomacy</div>
+          <a href="https://www.mofa.go.jp/press/release/pressite_000001_01627.html" target="_blank" rel="noopener noreferrer">
+            <h2 class="title">Colombian President Petro Visits Expo Osaka–Kansai for Meetings and Tours</h2>
+          </a>
+          <p class="summary">Japan’s Ministry of Foreign Affairs reports that President Petro attended meetings and toured the Expo grounds on Sept 5.</p>
+          <div class="meta"><span class="badge">Ministry of Foreign Affairs, Japan</span></div>
+        </div>
+      </article>
+
+      <!-- 8. Accessibility / Deaflympics -->
+      <article class="card sm">
+        <div class="pad">
+          <div class="eyebrow">Accessibility</div>
+          <a href="https://www.softbank.jp/en/sbnews/entry/20250905_01" target="_blank" rel="noopener noreferrer">
+            <h2 class="title">SoftBank Unveils Accessibility Tech for Tokyo 2025 Deaflympics</h2>
+          </a>
+          <p class="summary">Real-time transcription and other assistive solutions will support deaf athletes and spectators during the event.</p>
+          <div class="meta"><span class="badge">SoftBank</span></div>
+        </div>
+      </article>
+
+      <!-- 9. Culture / Canon -->
+      <article class="card md">
+        <div class="pad">
+          <div class="eyebrow">Culture</div>
+          <a href="https://global.canon/en/news/2025/20250905.html" target="_blank" rel="noopener noreferrer">
+            <h2 class="title">Canon Donates High‑Quality Facsimile of 16th‑Century ‘Maple’ Masterpiece</h2>
+          </a>
+          <p class="summary">Canon announced the donation of an ultra‑high resolution facsimile of Hasegawa Tōhaku’s 16th‑century artwork to Ishikawa Prefecture’s Nanao City museum.</p>
+          <div class="meta"><span class="badge">Canon Inc.</span></div>
+        </div>
+      </article>
+
+    </section>
+
+    <footer>
+      <p class="sources">Note: The headlines above were compiled from reputable sources published on September 5, 2025 (JST/BDT). Click the links for full reports.</p>
+    </footer>
+  </main>
+</body>
+</html>
